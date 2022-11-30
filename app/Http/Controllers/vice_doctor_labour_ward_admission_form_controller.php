@@ -27,6 +27,7 @@ class vice_doctor_labour_ward_admission_form_controller extends Controller
         $add->c_o = $req->c_o;
         $add->relevant_past_history = $req->relevant_past_history;
         $add->general_condition = $req->general_condition;
+        $add->condition = $req->condition;
         $add->bp = $req->bp;
         $add->pulse = $req->pulse;
         $add->temp = $req->temp;

@@ -9,9 +9,9 @@ class vice_doctor_antenatal_admission_sheet_controller extends Controller
 {
     public function get_vice_doctor_antenatal_admission_sheet($patient_id)
     {
-        return vice_doctor_antenatal_admission_sheet::where('patient_id',$patient_id)->get();
+        return vice_doctor_antenatal_admission_sheet::where('patient_id', $patient_id)->get();
     }
-    
+
     //
     public function post_vice_doctor_antenatal_admission_sheet(Request $req)
     {
@@ -24,6 +24,7 @@ class vice_doctor_antenatal_admission_sheet_controller extends Controller
         $add->bp = $req->bp;
         $add->temp = $req->temp;
         $add->general_condition = $req->general_condition;
+        $add->general_condition_list = $req->general_condition_list;
         $add->cvs_and_chest_examination = $req->cvs_and_chest_examination;
         $add->fundal_height = $req->fundal_height;
         $add->lie = $req->lie;
@@ -34,15 +35,10 @@ class vice_doctor_antenatal_admission_sheet_controller extends Controller
         $add->diagnosis = $req->diagnosis;
         $add->immediate_instruction = $req->immediate_instruction;
         $result = $add->save();
-        if($result)
-        {
-            return ['result'=>'data is saved'];
-        }
-
-        else
-        {
+        if ($result) {
+            return ['result' => 'data is saved'];
+        } else {
             return ['result' => 'result is failed'];
         }
-
     }
 }
