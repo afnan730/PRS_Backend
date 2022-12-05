@@ -32,6 +32,7 @@ class front_desk_statistic_form_controller extends Controller
         $add->other_diseases_and_complications = $req->other_diseases_and_complications;
         $add->incident_date = $req->incident_date;
         $add->incident_time = $req->incident_time;
+        $add->accident_cause = $req->accident_cause;
         $add->diabetes_test = $req->diabetes_test;
         $add->immunization_against_diseases = $req->immunization_against_diseases;
         $add->immunization_date = $req->immunization_date;
