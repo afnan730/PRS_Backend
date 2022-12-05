@@ -30,8 +30,8 @@ class vice_doctor_operation_note_controller extends Controller
         $add->process = $req->process;
         $add->blood_loss = $req->blood_loss;
         $add->ovaries_and_tubes_checked = $req->ovaries_and_tubes_checked;
-        $add->baby_name = $req->baby_name;
-        $add->baby_number = $req->baby_number;
+        $add->baby = $req->baby;
+
         $add->weight = $req->weight;
         $add->apgar_score = $req->apgar_score;
         $add->treatment = $req->treatment;

@@ -21,7 +21,7 @@ class vice_doctor_obstetrical_history_controller extends Controller
         $add->gr = $req->gr;
         $add->para_1 = $req->para_1;
         $add->para_2 = $req->para_2;
-        $add->note = $req->note;
+        $add->drug_history = $req->drug_history;
         $add->lmp = $req->lmp;
         $add->edd = $req->edd;
         $add->scan_edd = $req->scan_edd;
@@ -31,7 +31,7 @@ class vice_doctor_obstetrical_history_controller extends Controller
         $add->family_history = $req->family_history;
         $add->others = $req->others;
         $add->chest_cvs_examination = $req->chest_cvs_examination;
-        $add->comments_and_special_plans = $req->comments_and_special_plan;
+        $add->comments_and_special_plans = $req->comments_and_special_plans;
         $add->comments_on_par = $req->comments_on_par;
         $result = $add->save();
         if ($result) {
